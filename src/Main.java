@@ -1,4 +1,4 @@
 
 public class Main {
- //A Developper quna tous sera finis
+ //A Developper quand tous sera finis
 }
