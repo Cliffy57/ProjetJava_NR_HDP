@@ -1,5 +1,4 @@
-package projet;
-
+package produit;
 
 public class Produit {
 	private double id;
