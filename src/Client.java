@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Client {
 
@@ -5,6 +6,7 @@ public class Client {
 	private String nom;
 	private String prenom;
 	private float reduction;
+	ArrayList<String> listeCommande = new ArrayList<String>();
 	
 	public int getIdentifiant() {
 		return identifiant;
