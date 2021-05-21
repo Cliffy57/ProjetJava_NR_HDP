@@ -1,9 +1,9 @@
 package produit;
 
-public class Produit {
-	private double id;
-	private String titre;
-	private float tarif;
+public abstract class Produit {
+	protected double id;
+	protected String titre;
+	protected float tarif;
 	
 	public Produit(double id, String titre, float tarif) {
 		super();
