@@ -1,4 +1,4 @@
-package produit;
+package projet.produit;
 
 public abstract class Produit {
 	protected double id;

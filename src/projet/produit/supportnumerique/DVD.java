@@ -1,6 +1,6 @@
-package produit.supportnumerique;
+package projet.produit.supportnumerique;
 
-import produit.SupportNumerique;
+import projet.produit.SupportNumerique;
 
 public class DVD extends SupportNumerique {
 

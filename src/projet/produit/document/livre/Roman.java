@@ -1,6 +1,6 @@
-package produit.document.livre;
+package projet.produit.document.livre;
 
-import produit.document.Livre;
+import projet.produit.document.Livre;
 
 public class Roman extends Livre {
 

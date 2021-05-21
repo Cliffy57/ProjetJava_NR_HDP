@@ -1,4 +1,5 @@
-package produit;
+package projet.produit;
+
 
 public class Document extends Produit {
 

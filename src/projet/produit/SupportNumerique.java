@@ -1,4 +1,4 @@
-package produit;
+package projet.produit;
 
 public class SupportNumerique extends Produit  {
 
