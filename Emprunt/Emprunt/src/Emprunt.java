@@ -5,13 +5,13 @@ public class Emprunt {
 	private Date Datedeb;
   private Date DateFin;
 	
-	public int getDateDeb() {
+	public Date getDateDeb() {
 		return Datedeb;
 	}
 	public void setDateDeb(Date DateDeb) {
-		this.DateDeb = DateDeb;
+		this.Datedeb = DateDeb;
 	}
-	public String getDateFin() {
+	public Date getDateFin() {
 		return DateFin;
 	}
 	public void setDateFin(Date DateFin) {
