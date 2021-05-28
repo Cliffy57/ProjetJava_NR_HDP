@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-public class Client {
-
+public abstract class Client {
 	private int identifiant;
 	private String nom;
 	private String prenom;
