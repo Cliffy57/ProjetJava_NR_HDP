@@ -6,14 +6,14 @@ public class Commande {
     protected Date dateCrea;
     protected Date dateFin;
     protected float reduction;
-    protected ArrayList<Produit> listeEmprunts;
+    protected ArrayList<Emprunt> listeEmprunts;
 
     Commande(int identifiant, Date dateCrea, Date dateFin) {
         this.indentifiant = identifiant;
         this.dateCrea = dateCrea;
         this.dateFin = dateFin;
         this.reduction = 0.2f;
-        this.listeEmprunts = new ArrayList<Produit>();
+        this.listeEmprunts = new ArrayList<Emprunt>();
     }
 
     public int getIndentifiant() {
@@ -48,12 +48,16 @@ public class Commande {
         this.reduction = reduction;
     }
 
-    public ArrayList<Produit> getEmprunts() {
+    public ArrayList<Emprunt> getListeEmprunts() {
         return this.listeEmprunts;
     }
 
-    public void setEmprunts(ArrayList<Produit> listeEmprunts) {
+    /*public void setEmprunts(ArrayList<Produit> listeEmprunts) {
         this.listeEmprunts = listeEmprunts;
+    }*/
+
+    public void addEmprunt(Emprunt emprunt) {
+        this.listeEmprunts.add(emprunt);
     }
     
     public void montantCommande(){}
