@@ -1,14 +1,13 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Videotheque {
-    /*
-
-    protected ArrayList<Client> listeClients; y'a pas encore la classe Client
-    protected ArrayList<Produit> listeProduits; y'a pas encore la classe Produit
+    protected ArrayList<Client> listeClients; 
+    protected ArrayList<Produit> listeProduits; 
 
     Videotheque () {
-        this.listeClients = new ArrayList<Client>;
-        this.listeProduits = new ArrayList<Produit>;
+        this.listeClients = new ArrayList<Client>();
+        this.listeProduits = new ArrayList<Produit>();
     }
 
     public void ajouterClient(Client c) {
@@ -16,19 +15,19 @@ public class Videotheque {
     }
 
     public void ajouterProduit(Produit p) {
-        this.listeClients.add(p);
+        this.listeProduits.add(p);
     }
 
     public ArrayList<Produit> recupererStockDisponible() {
-        ArrayList<Produit> tempProduits = new Arraylist<Produit>();
-        Iterator<Produit> produitIterator = produit.iterator():
-        Produit produit = produit.next();
+        ArrayList<Produit> tempProduits = new ArrayList<Produit>();
+        Iterator<Produit> produitIterator = listeProduits.iterator();
+        Produit produit = produitIterator.next();
 
         do {
-
+            /*
             if (produit.estDisponible()) {
                 tempProduits.add(produit);
-            }
+            }*/
 
         } while (produitIterator.hasNext());
 
@@ -36,9 +35,27 @@ public class Videotheque {
     }
 
     public ArrayList<Produit> recupererStockIndisponible() {
-        ArrayList<Produit> tempProduits = new Arraylist<Produit>();
-        Iterator<Produit> produitIterator = produit.iterator():
-        Produit produit = produit.next();
+        ArrayList<Produit> tempProduits = new ArrayList<Produit>();
+        Iterator<Produit> produitIterator = listeProduits.iterator();
+        Produit produit = produitIterator.next();
+
+        do {
+
+            /*if (!(produit.estDisponible())) {
+                tempProduits.add(produit);
+            }*/
+
+        } while (produitIterator.hasNext());
+
+        return tempProduits;
+    }
+
+    /*
+
+    public int recupererQuantiteStock {
+        int quantiteStock = 0;
+        Iterator<Produit> produitIterator = listeProduits.iterator();
+        Produit produit = produitIterator.next();
 
         do {
 
@@ -48,24 +65,8 @@ public class Videotheque {
 
         } while (produitIterator.hasNext());
 
-        return tempProduits;
-    }
-
-    public int recupererQuantiteStock {
-        int quantiteStock = 0;
-        Iterator<Produit> produitIterator = produit.iterator():
-        Produit produit = produit.next();
-
-        do {
-
-            if (produit.estDisponible()) {
-                quantiteStock++;
-            }
-
-        } while (produitIterator.hasNext());
-
         return quantiteStock;
-    }
+    } */
 
-    */
+    
 }
