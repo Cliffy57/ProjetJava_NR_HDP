@@ -8,7 +8,7 @@ public class Emprunt {
     private Date dateFin;
     private ArrayList<Produit> listeProduits;
 
-    Emprunt(Date dateDeb, Date dateFin) {
+    public Emprunt(Date dateDeb, Date dateFin) {
         this.dateDeb = dateDeb;
         this.dateFin = dateFin;
         this.listeProduits = new ArrayList<Produit>();
