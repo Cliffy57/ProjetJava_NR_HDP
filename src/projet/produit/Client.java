@@ -41,8 +41,8 @@ public abstract class Client {
 		this.prenom = prenom;
 	}
 	
-	public void addOrder() {
-	    // code to be executed
+	public ArrayList<Commande> getCommandeList() {
+	    return this.listeCommande;
 	  }
 	public void delOrder() {
 	    // code to be executed
