@@ -4,6 +4,7 @@ public abstract class Produit {
 	protected double id;
 	protected String titre;
 	protected float tarif;
+	protected boolean disponible;
 	
 	public Produit(double id, String titre, float tarif) {
 		super();
@@ -34,6 +35,14 @@ public abstract class Produit {
 	
 	public void setTarif(float tarif) {
 		this.tarif = tarif;
+	}
+
+	public boolean estDisponible() {
+		return this.disponible;
+	}
+
+	public void setDisponible(boolean bool) {
+		this.disponible = bool;
 	}
 	
 }
