@@ -5,7 +5,7 @@ public abstract class Client {
 	private String nom;
 	private String prenom;
 	private float reduction;
-	ArrayList<String> listeCommande = new ArrayList<String>();
+	ArrayList<Commande> listeCommande = new ArrayList<Commande>();
 	
 	public int getIdentifiant() {
 		return identifiant;
@@ -14,8 +14,9 @@ public abstract class Client {
 		this.identifiant = identifiant;
 	}
 	public String getNom() {
-		return nom;
+		return this.nom;
 	}
+	
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
