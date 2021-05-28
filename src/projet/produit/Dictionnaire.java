@@ -1,3 +1,4 @@
+/*package projet.produit;
 
 public class Dictionnaire extends Document {
     // utiliser un enum??
@@ -5,11 +6,10 @@ public class Dictionnaire extends Document {
 
     public Dictionnaire(double id, String titre, float tarif) {
         super(id, titre, tarif);
-        //TODO Auto-generated constructor stub
     }
  
     public String getLangue() {
         return this.langue;
     }
     
-}
+}*/

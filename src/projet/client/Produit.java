@@ -1,3 +1,5 @@
+package projet.client;
+
 public abstract class Produit {
 	protected double id;
 	protected String titre;

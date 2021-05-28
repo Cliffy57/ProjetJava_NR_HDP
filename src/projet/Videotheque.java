@@ -1,5 +1,10 @@
+package projet;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import projet.client.Client;
+import projet.client.Produit;
 
 public class Videotheque {
     protected ArrayList<Client> listeClients; 

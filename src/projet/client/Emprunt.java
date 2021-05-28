@@ -1,3 +1,5 @@
+package projet.client;
+
 import java.util.ArrayList;
 import java.util.Date;
 

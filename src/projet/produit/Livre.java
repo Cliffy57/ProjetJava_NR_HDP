@@ -1,3 +1,4 @@
+package projet.produit;
 
 
 public class Livre extends Document {
@@ -5,7 +6,7 @@ public class Livre extends Document {
 
     public Livre(double id, String titre, float tarif) {
         super(id, titre, tarif);
-        //TODO Auto-generated constructor stub
+        
     }
 
     public String getAuteur() {

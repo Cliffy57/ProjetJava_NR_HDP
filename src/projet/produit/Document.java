@@ -1,3 +1,6 @@
+package projet.produit;
+
+import projet.client.Produit;
 
 public class Document extends Produit {
 
@@ -6,3 +9,4 @@ public class Document extends Produit {
     }
     
 }
+
