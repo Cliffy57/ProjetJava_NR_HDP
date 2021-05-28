@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Client {
 
-	private int identifiant;
-	private String nom;
-	private String prenom;
+	protected int identifiant;
+	protected String nom;
+	protected String prenom;
 	private float reduction;
 	ArrayList<String> listeCommande = new ArrayList<String>();
 	
