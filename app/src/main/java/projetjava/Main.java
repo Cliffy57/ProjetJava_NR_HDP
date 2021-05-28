@@ -1,9 +1,9 @@
-package projet;
+package projetjava;
 
 import java.util.Date;
 
-import projet.client.*;
-import projet.produit.*;
+import projetjava.client.*;
+import projetjava.produit.*;
 
 public class Main {
 

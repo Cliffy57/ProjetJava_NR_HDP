@@ -1,4 +1,4 @@
-package projet.produit;
+package projetjava.produit;
 
 public class ManuelScolaire extends Livre {
 

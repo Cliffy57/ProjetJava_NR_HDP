@@ -1,10 +1,10 @@
-package projet;
+package projetjava;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import projet.client.Client;
-import projet.client.Produit;
+import projetjava.client.Client;
+import projetjava.client.Produit;
 
 public class Videotheque {
     protected ArrayList<Client> listeClients; 
@@ -69,5 +69,13 @@ public class Videotheque {
         } while (produitIterator.hasNext());
 
         return quantiteStock;
+    }
+
+    public ArrayList<Client> getListeClients() {
+        return this.listeClients;
+    }
+
+    public ArrayList<Produit> getListeProduits() {
+        return this.listeProduits;
     }
 }

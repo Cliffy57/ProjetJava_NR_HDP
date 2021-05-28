@@ -1,4 +1,4 @@
-package projet.client;
+package projetjava.client;
 
 public abstract class Produit {
 	protected double id;

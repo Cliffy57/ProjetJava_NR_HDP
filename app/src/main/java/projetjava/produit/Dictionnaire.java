@@ -1,4 +1,4 @@
-/*package projet.produit;
+package projetjava.produit;
 
 public class Dictionnaire extends Document {
     // utiliser un enum??
@@ -12,4 +12,4 @@ public class Dictionnaire extends Document {
         return this.langue;
     }
     
-}*/
+}

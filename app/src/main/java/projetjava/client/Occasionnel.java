@@ -1,5 +1,5 @@
 
-package projet.client;
+package projetjava.client;
 
 public class Occasionnel extends Client {
 

@@ -1,4 +1,4 @@
-package projet.produit;
+package projetjava.produit;
 
 
 public class Livre extends Document {

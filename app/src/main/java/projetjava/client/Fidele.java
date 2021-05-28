@@ -1,4 +1,4 @@
-package projet.client;
+package projetjava.client;
 
 public class Fidele extends Client {
 

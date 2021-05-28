@@ -1,4 +1,4 @@
-package projet.client;
+package projetjava.client;
 
 import java.util.ArrayList;
 
