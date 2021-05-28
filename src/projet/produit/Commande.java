@@ -2,13 +2,19 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Commande {
-
     protected int indentifiant;
     protected Date dateCrea;
     protected Date dateFin;
     protected float reduction;
-    protected ArrayList<String> Emprunts = new ArrayList<String>();
+    protected ArrayList<Produit> listeEmprunts;
 
+    Commande(int identifiant, Date dateCrea, Date dateFin) {
+        this.indentifiant = identifiant;
+        this.dateCrea = dateCrea;
+        this.dateFin = dateFin;
+        this.reduction = 0.2f;
+        this.listeEmprunts = new ArrayList<Produit>();
+    }
 
     public int getIndentifiant() {
         return this.indentifiant;
@@ -42,12 +48,12 @@ public class Commande {
         this.reduction = reduction;
     }
 
-    public ArrayList<String> getEmprunts() {
-        return this.Emprunts;
+    public ArrayList<Produit> getEmprunts() {
+        return this.listeEmprunts;
     }
 
-    public void setEmprunts(ArrayList<String> Emprunts) {
-        this.Emprunts = Emprunts;
+    public void setEmprunts(ArrayList<Produit> listeEmprunts) {
+        this.listeEmprunts = listeEmprunts;
     }
     
     public void montantCommande(){}
