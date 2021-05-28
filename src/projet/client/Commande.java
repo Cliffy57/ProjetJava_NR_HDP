@@ -9,8 +9,8 @@ public class Commande {
     protected Date dateFin;
     protected float reduction;
     protected ArrayList<Emprunt> listeEmprunts;
-
-    Commande(int identifiant, Date dateCrea, Date dateFin) {
+    
+    public Commande(int identifiant, Date dateCrea, Date dateFin) {
         this.indentifiant = identifiant;
         this.dateCrea = dateCrea;
         this.dateFin = dateFin;
