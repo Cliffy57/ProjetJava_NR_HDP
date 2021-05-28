@@ -5,7 +5,7 @@ public abstract class Client {
 	private String nom;
 	private String prenom;
 	private float reduction;
-	ArrayList<Commande> listeCommande = new ArrayList<Commande>();
+	ArrayList<Commande> listeCommande;
 	
 	public int getIdentifiant() {
 		return identifiant;
@@ -39,13 +39,14 @@ public abstract class Client {
 		this.identifiant = identifiant;
 		this.nom = nom;
 		this.prenom = prenom;
+		this.listeCommande = new ArrayList<Commande>();
 	}
 	
 	public ArrayList<Commande> getCommandeList() {
 	    return this.listeCommande;
 	  }
-	public void delOrder() {
-	    // code to be executed
+	public void addCommande(Commande commande) {
+	    this.listeCommande.add(commande);
 	  
 	  }
 	
