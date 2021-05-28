@@ -29,10 +29,10 @@ public class Videotheque {
         Produit produit = produitIterator.next();
 
         do {
-            /*
+            
             if (produit.estDisponible()) {
                 tempProduits.add(produit);
-            }*/
+            }
 
         } while (produitIterator.hasNext());
 
@@ -46,18 +46,16 @@ public class Videotheque {
 
         do {
 
-            /*if (!(produit.estDisponible())) {
+            if (!(produit.estDisponible())) {
                 tempProduits.add(produit);
-            }*/
+            }
 
         } while (produitIterator.hasNext());
 
         return tempProduits;
     }
 
-    /*
-
-    public int recupererQuantiteStock {
+    public int recupererQuantiteStock() {
         int quantiteStock = 0;
         Iterator<Produit> produitIterator = listeProduits.iterator();
         Produit produit = produitIterator.next();
@@ -65,13 +63,11 @@ public class Videotheque {
         do {
 
             if (!(produit.estDisponible())) {
-                tempProduits.add(produit);
+                quantiteStock += 1;
             }
 
         } while (produitIterator.hasNext());
 
         return quantiteStock;
-    } */
-
-    
+    }
 }
