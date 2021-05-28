@@ -1,5 +1,3 @@
-package projet.produit;
-
 public abstract class Produit {
 	protected double id;
 	protected String titre;

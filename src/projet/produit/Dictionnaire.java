@@ -1,6 +1,3 @@
-package projet.produit.document;
-
-import projet.produit.Document;
 
 public class Dictionnaire extends Document {
     // utiliser un enum??

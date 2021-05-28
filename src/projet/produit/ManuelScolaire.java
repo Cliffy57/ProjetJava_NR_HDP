@@ -1,6 +1,3 @@
-package projet.produit.document.livre;
-
-import projet.produit.document.Livre;
 
 public class ManuelScolaire extends Livre {
 

@@ -1,6 +1,4 @@
-package projet.produit.supportnumerique;
 
-import projet.produit.SupportNumerique;
 
 public class DVD extends SupportNumerique {
 

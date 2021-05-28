@@ -1,7 +1,3 @@
-package projet.produit.supportnumerique;
-
-import projet.produit.SupportNumerique;
-
 public class CD extends SupportNumerique {
 
     public CD(double id, String titre, float tarif) {

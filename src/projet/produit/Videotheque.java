@@ -1,5 +1,3 @@
-package projet.produit;
-
 import java.util.ArrayList;
 
 public class Videotheque {

@@ -1,6 +1,4 @@
-package projet.produit.document;
 
-import projet.produit.Document;
 
 public class Livre extends Document {
     private String auteur;
