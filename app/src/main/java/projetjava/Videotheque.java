@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import projetjava.client.Client;
-import projetjava.client.Produit;
+import projetjava.produit.Produit;
 
 public class Videotheque {
     protected ArrayList<Client> listeClients; 
@@ -28,13 +28,13 @@ public class Videotheque {
         Iterator<Produit> produitIterator = listeProduits.iterator();
         Produit produit = produitIterator.next();
 
-        do {
+        while (produitIterator.hasNext()) {
             
             if (produit.estDisponible()) {
                 tempProduits.add(produit);
             }
 
-        } while (produitIterator.hasNext());
+        }
 
         return tempProduits;
     }
@@ -44,13 +44,14 @@ public class Videotheque {
         Iterator<Produit> produitIterator = listeProduits.iterator();
         Produit produit = produitIterator.next();
 
-        do {
+
+        while (produitIterator.hasNext()) {
 
             if (!(produit.estDisponible())) {
                 tempProduits.add(produit);
             }
 
-        } while (produitIterator.hasNext());
+        };
 
         return tempProduits;
     }
