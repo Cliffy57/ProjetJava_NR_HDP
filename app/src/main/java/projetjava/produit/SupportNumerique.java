@@ -1,6 +1,5 @@
 package projetjava.produit;
 
-import projetjava.client.Produit;
 
 public class SupportNumerique extends Produit  {
 

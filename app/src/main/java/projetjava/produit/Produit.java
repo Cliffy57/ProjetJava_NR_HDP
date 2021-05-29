@@ -1,4 +1,4 @@
-package projetjava.client;
+package projetjava.produit;
 
 public abstract class Produit {
 	protected double id;
@@ -11,6 +11,7 @@ public abstract class Produit {
 		this.id = id;
 		this.titre = titre;
 		this.tarif = tarif;
+		this.disponible = true;
 	}
 	
 	public double getId() {
