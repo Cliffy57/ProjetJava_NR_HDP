@@ -7,7 +7,7 @@ public class Occasionnel extends Client {
 		super(identifiant, nom, prenom);
 	}
   
-	final int reduction = 0;
+	public static final int reduction = 20;
 	
 }
 

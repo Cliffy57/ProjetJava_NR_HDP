@@ -5,6 +5,6 @@ public class Fidele extends Client {
 	public Fidele(int identifiant, String nom, String prenom) {
 		super(identifiant, nom, prenom);
 	}
-	final int reduction = 10;
+	public final static int reduction = 10;
 	   
 }
