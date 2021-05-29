@@ -11,9 +11,9 @@ public abstract class Client {
 
 	/**
 	 * crée un objet Client
-	 * @param identifiant
-	 * @param nom
-	 * @param prenom
+	 * @param identifiant identifiant
+	 * @param nom nom
+	 * @param prenom prenom
 	 */
 	
 	public Client(int identifiant, String nom, String prenom) {
@@ -26,7 +26,7 @@ public abstract class Client {
 	
 	/**
 	 * renvoie l'identifiant
-	 * @return identifiant
+	 * @return identifiant identifiant
 	 */
 
 	public int getIdentifiant() {
@@ -35,7 +35,7 @@ public abstract class Client {
 
 	/**
 	 * définis un identifiant
-	 * @param identifiant
+	 * @param identifiant identifiant
 	 */
 
 	public void setIdentifiant(int identifiant) {
@@ -44,7 +44,7 @@ public abstract class Client {
 
 	/**
 	 * renvoie un nom
-	 * @return nom
+	 * @return nom nom
 	 */
 
 	public String getNom() {
@@ -53,7 +53,7 @@ public abstract class Client {
 
 	/**
 	 * définis le nom
-	 * @param nom
+	 * @param nom nom
 	 */
 	
 	public void setNom(String nom) {
@@ -62,7 +62,7 @@ public abstract class Client {
 	
 	/**
 	 * renvoie le prénom
-	 * @return prenom
+	 * @return prenom prenom
 	 */
 
 	public String getPrenom() {
@@ -71,7 +71,7 @@ public abstract class Client {
 
 	/**
 	 * définis le prénom
-	 * @param prenom
+	 * @param prenom prenom
 	 */
 
 	public void setPrenom(String prenom) {
@@ -80,7 +80,7 @@ public abstract class Client {
 
 	/**
 	 * renvoie la réduction
-	 * @return réduction
+	 * @return réduction réduction
 	 */
 
 	public float getReduction() {
@@ -89,7 +89,7 @@ public abstract class Client {
 
 	/**
 	 * définis la réduction
-	 * @param reduction
+	 * @param reduction réduction
 	 */
 
 	public void setReduction(float reduction) {
@@ -107,7 +107,7 @@ public abstract class Client {
 
 	  /**
 	   * ajoute une commande a la liste
-	   * @param commande
+	   * @param commande commande
 	   */
 
 	public void addCommande(Commande commande) {

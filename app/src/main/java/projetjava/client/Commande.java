@@ -36,7 +36,7 @@ public class Commande {
 
     /**
      * permet de définir l'identifiant d'une commande
-     * @param indentifiant
+     * @param indentifiant un identifiant
      */
 
     public void setIndentifiant(int indentifiant) {
@@ -54,7 +54,7 @@ public class Commande {
 
     /**
      * permet de définir la date de création d'une Commande
-     * @param dateCrea
+     * @param dateCrea date de création
      */
 
     public void setDateCrea(Calendar dateCrea) {
@@ -72,7 +72,7 @@ public class Commande {
 
     /**
      * permet de définir la date de fin d'une Commande
-     * @param la date de fin de la COmmande
+     * @param dateFin la date de fin de la COmmande
      */
 
     public void setDateFin(Calendar dateFin) {
@@ -81,7 +81,7 @@ public class Commande {
 
     /**
      * renvoie la réduction d'une COmmande
-     * @return réduction
+     * @return réduction réduction a appliquer
      */
 
     public float getReduction() {
@@ -90,7 +90,7 @@ public class Commande {
 
     /**
      * permet de définir une réduction sur une Commande
-     * @param reduction
+     * @param reduction réduction a appliquer
      */
 
     public void setReduction(float reduction) {
@@ -99,7 +99,7 @@ public class Commande {
 
     /**
      * renvoie la liste des Emprunts compris dans cette Commande
-     * @return
+     * @return liste des emprunts
      */
 
     public ArrayList<Emprunt> getListeEmprunts() {
