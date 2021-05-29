@@ -1,16 +1,16 @@
 package projetjava.client;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Calendar;
 
 public class Commande {
     protected int indentifiant;
-    protected Date dateCrea;
-    protected Date dateFin;
+    protected Calendar dateCrea;
+    protected Calendar dateFin;
     protected float reduction;
     protected ArrayList<Emprunt> listeEmprunts;
     
-    public Commande(int identifiant, Date dateCrea, Date dateFin) {
+    public Commande(int identifiant, Calendar dateCrea, Calendar dateFin) {
         this.indentifiant = identifiant;
         this.dateCrea = dateCrea;
         this.dateFin = dateFin;
@@ -26,19 +26,19 @@ public class Commande {
         this.indentifiant = indentifiant;
     }
 
-    public Date getDateCrea() {
+    public Calendar getDateCrea() {
         return this.dateCrea;
     }
 
-    public void setDateCrea(Date dateCrea) {
+    public void setDateCrea(Calendar dateCrea) {
         this.dateCrea = dateCrea;
     }
 
-    public Date getDateFin() {
+    public Calendar getDateFin() {
         return this.dateFin;
     }
 
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(Calendar dateFin) {
         this.dateFin = dateFin;
     }
 

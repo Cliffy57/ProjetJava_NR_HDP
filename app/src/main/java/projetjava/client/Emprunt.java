@@ -1,24 +1,27 @@
 package projetjava.client;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
+import projetjava.produit.Produit;
+
 public class Emprunt {
-    private Date dateDeb;
-    private Date dateFin;
+    private Calendar dateDeb;
+    private Calendar dateFin;
     private ArrayList<Produit> listeProduits;
 
-    public Emprunt(Date dateDeb, Date dateFin) {
+    public Emprunt(Calendar dateDeb, Calendar dateFin) {
         this.dateDeb = dateDeb;
         this.dateFin = dateFin;
         this.listeProduits = new ArrayList<Produit>();
     }
 
-    public Date getDateDeb() {
+    public Calendar getDateDeb() {
         return dateDeb;
     }
 
-    public Date getDateFin() {
+    public Calendar getDateFin() {
         return dateFin;
     }
 
