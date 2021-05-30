@@ -11,9 +11,9 @@ public abstract class Client {
 
 	/**
 	 * crée un objet Client
-	 * @param identifiant identifiant
-	 * @param nom nom
-	 * @param prenom prenom
+	 * @param identifiant identifiant du client
+	 * @param nom nom du client
+	 * @param prenom prenom du client
 	 */
 	
 	public Client(int identifiant, String nom, String prenom) {
@@ -26,7 +26,7 @@ public abstract class Client {
 	
 	/**
 	 * renvoie l'identifiant
-	 * @return identifiant identifiant
+	 * @return identifiant identifiant du client
 	 */
 
 	public int getIdentifiant() {
@@ -35,7 +35,7 @@ public abstract class Client {
 
 	/**
 	 * définis un identifiant
-	 * @param identifiant identifiant
+	 * @param identifiant identifiant du client
 	 */
 
 	public void setIdentifiant(int identifiant) {
@@ -44,7 +44,7 @@ public abstract class Client {
 
 	/**
 	 * renvoie un nom
-	 * @return nom nom
+	 * @return nom nom du client
 	 */
 
 	public String getNom() {
@@ -53,7 +53,7 @@ public abstract class Client {
 
 	/**
 	 * définis le nom
-	 * @param nom nom
+	 * @param nom nom du client
 	 */
 	
 	public void setNom(String nom) {
@@ -62,7 +62,7 @@ public abstract class Client {
 	
 	/**
 	 * renvoie le prénom
-	 * @return prenom prenom
+	 * @return prenom prenom du client
 	 */
 
 	public String getPrenom() {
@@ -71,7 +71,7 @@ public abstract class Client {
 
 	/**
 	 * définis le prénom
-	 * @param prenom prenom
+	 * @param prenom prenom du cllient
 	 */
 
 	public void setPrenom(String prenom) {
@@ -79,8 +79,8 @@ public abstract class Client {
 	}
 
 	/**
-	 * renvoie la réduction
-	 * @return réduction réduction
+	 * renvoie la réduction du client
+	 * @return réduction réduction liée au client
 	 */
 
 	public float getReduction() {
@@ -88,8 +88,8 @@ public abstract class Client {
 	}
 
 	/**
-	 * définis la réduction
-	 * @param reduction réduction
+	 * définis la réduction du client
+	 * @param reduction réduction liée au client
 	 */
 
 	public void setReduction(float reduction) {
@@ -97,8 +97,8 @@ public abstract class Client {
 	}
 	
 	/**
-	 * renvoie la liste des commandes
-	 * @return liste des commandes
+	 * renvoie la liste des commandes du client
+	 * @return liste des commandes du client
 	 */
 	
 	public ArrayList<Commande> getCommandeList() {
@@ -106,8 +106,8 @@ public abstract class Client {
 	  }
 
 	  /**
-	   * ajoute une commande a la liste
-	   * @param commande commande
+	   * ajoute une commande a la liste des commandes du client
+	   * @param commande commande a ajouter
 	   */
 
 	public void addCommande(Commande commande) {
