@@ -11,10 +11,10 @@ public class Commande {
     protected ArrayList<Emprunt> listeEmprunts;
 
     /**
-     * cree un objet Commande 
-     * @param identifiant l'identifiant de l'objet
-     * @param dateCrea la date de création
-     * @param dateFin la date de fin
+     * cree un objet Commande
+     * @param identifiant identifiant de l'objet
+     * @param dateCrea date de création
+     * @param dateFin date de fin
      */
     
     public Commande(int identifiant, Calendar dateCrea, Calendar dateFin) {
@@ -27,7 +27,7 @@ public class Commande {
 
     /**
      * renvoie l'identifiant de la commande
-     * @return un identifiant
+     * @return identifiant de la commande
      */
 
     public int getIndentifiant() {
@@ -35,8 +35,8 @@ public class Commande {
     }
 
     /**
-     * permet de définir l'identifiant d'une commande
-     * @param indentifiant un identifiant
+     * définis un identifiant pour la commande
+     * @param indentifiant identifiant de la commande
      */
 
     public void setIndentifiant(int indentifiant) {
@@ -53,8 +53,8 @@ public class Commande {
     }
 
     /**
-     * permet de définir la date de création d'une Commande
-     * @param dateCrea date de création
+     * définis la date de création d'une Commande
+     * @param dateCrea date de création de la Commande
      */
 
     public void setDateCrea(Calendar dateCrea) {
@@ -62,8 +62,8 @@ public class Commande {
     }
 
     /**
-     * renvoie la date de fin d'une Commande
-     * @return la date de fin de la Commande
+     * renvoie la date de fin de la Commande
+     * @return date de fin de la Commande
      */
 
     public Calendar getDateFin() {
@@ -71,8 +71,8 @@ public class Commande {
     }
 
     /**
-     * permet de définir la date de fin d'une Commande
-     * @param dateFin la date de fin de la COmmande
+     * définis la date de fin d'une Commande
+     * @param dateFin date de fin de la COmmande
      */
 
     public void setDateFin(Calendar dateFin) {
@@ -80,7 +80,7 @@ public class Commande {
     }
 
     /**
-     * renvoie la réduction d'une COmmande
+     * renvoie la réduction à appliquer à la Commande
      * @return réduction réduction a appliquer
      */
 
@@ -89,7 +89,7 @@ public class Commande {
     }
 
     /**
-     * permet de définir une réduction sur une Commande
+     * définis la réduction à appliquer à la Commande
      * @param reduction réduction a appliquer
      */
 
@@ -98,7 +98,7 @@ public class Commande {
     }
 
     /**
-     * renvoie la liste des Emprunts compris dans cette Commande
+     * renvoie la liste des Emprunts de la Commande
      * @return liste des emprunts
      */
 
@@ -111,8 +111,8 @@ public class Commande {
     }*/
 
     /**
-     * permet d'ajouter un objet Emprunt a la liste des emprunts
-     * @param emprunt l'emprunt a ajouter a la liste
+     * ajoute un emprunt à la Commande
+     * @param emprunt emprunter à ajouter a la liste
      */
 
     public void addEmprunt(Emprunt emprunt) {

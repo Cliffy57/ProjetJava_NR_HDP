@@ -8,9 +8,9 @@ public abstract class Produit {
 
 	/**
 	 * crée un objet produit
-	 * @param id
-	 * @param titre
-	 * @param tarif
+	 * @param id identifiant du Produit
+	 * @param titre titre du Produit
+	 * @param tarif tarif du Produit
 	 */
 	
 	public Produit(double id, String titre, float tarif) {
@@ -23,7 +23,7 @@ public abstract class Produit {
 	
 	/**
 	 * renvoie l'identifiant
-	 * @return identifiant
+	 * @return identifiant du Produit
 	 */
 
 	public double getId() {
@@ -31,8 +31,8 @@ public abstract class Produit {
 	}
 
 	/**
-	 * définis l'identifiant
-	 * @param id
+	 * définis l'identifiant du Produit
+	 * @param id identifiant du Produit
 	 */
 	
 	public void setId(double id) {
@@ -40,8 +40,8 @@ public abstract class Produit {
 	}
 
 	/**
-	 * renvoie titre
-	 * @return titre
+	 * renvoie le titre du Produiit
+	 * @return titre du Produit
 	 */
 	
 	public String getTitre() {
@@ -49,8 +49,8 @@ public abstract class Produit {
 	}
 
 	/**
-	 * définis le titre
-	 * @param titre
+	 * définis le titre du Produit
+	 * @param titre titre du Produit
 	 */
 	
 	public void setTitre(String titre) {
@@ -59,8 +59,8 @@ public abstract class Produit {
 	
 
 	/**
-	 * renvoie le tarif
-	 * @return
+	 * renvoie le tarif du Produit
+	 * @return tarif du Produit
 	 */
 
 	public float getTarif() {
@@ -68,8 +68,8 @@ public abstract class Produit {
 	}
 
 	/**
-	 * définis le tarif
-	 * @param tarif
+	 * définis le tarif du Produit
+	 * @param tarif du Produit
 	 */
 	
 	public void setTarif(float tarif) {
