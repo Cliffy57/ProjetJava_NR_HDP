@@ -1,4 +1,4 @@
-package projetjava.produit;
+package projetjava.controllers.produit;
 
 
 public class Livre extends Document {

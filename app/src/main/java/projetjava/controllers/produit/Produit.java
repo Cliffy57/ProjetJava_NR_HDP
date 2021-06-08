@@ -1,10 +1,11 @@
-package projetjava.produit;
+package projetjava.controllers.produit;
 
 public abstract class Produit {
 	protected double id;
 	protected String titre;
 	protected float tarif;
 	protected boolean disponible;
+ 
 
 	/**
 	 * crée un objet produit

@@ -1,12 +1,12 @@
-package projetjava.client;
+package projetjava.controllers.client;
 
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.Date;
 
 public class Commande {
     protected int indentifiant;
-    protected Calendar dateCrea;
-    protected Calendar dateFin;
+    protected Date dateCrea;
+    protected Date dateFin;
     protected float reduction;
     protected ArrayList<Emprunt> listeEmprunts;
 
@@ -14,14 +14,14 @@ public class Commande {
      * cree un objet Commande
      * @param identifiant identifiant de l'objet
      * @param dateCrea date de création
-     * @param dateFin date de fin
+     * @param f date de fin
      */
     
-    public Commande(int identifiant, Calendar dateCrea, Calendar dateFin) {
+    public Commande(int identifiant, Date dateCrea, float reduction) {
         this.indentifiant = identifiant;
         this.dateCrea = dateCrea;
-        this.dateFin = dateFin;
-        this.reduction = 0.2f;
+        //this.dateFin = f; // sert a rien
+        this.reduction = reduction;
         this.listeEmprunts = new ArrayList<Emprunt>();
     }
 
@@ -48,7 +48,7 @@ public class Commande {
      * @return date de création de la Commande
      */
 
-    public Calendar getDateCrea() {
+    public Date getDateCrea() {
         return this.dateCrea;
     }
 
@@ -57,7 +57,7 @@ public class Commande {
      * @param dateCrea date de création de la Commande
      */
 
-    public void setDateCrea(Calendar dateCrea) {
+    public void setDateCrea(Date dateCrea) {
         this.dateCrea = dateCrea;
     }
 
@@ -66,7 +66,7 @@ public class Commande {
      * @return date de fin de la Commande
      */
 
-    public Calendar getDateFin() {
+    public Date getDateFin() {
         return this.dateFin;
     }
 
@@ -75,7 +75,7 @@ public class Commande {
      * @param dateFin date de fin de la COmmande
      */
 
-    public void setDateFin(Calendar dateFin) {
+    public void setDateFin(Date dateFin) {
         this.dateFin = dateFin;
     }
 
@@ -119,7 +119,18 @@ public class Commande {
         this.listeEmprunts.add(emprunt);
     }
     
-    public void montantCommande(){}
+    public float montantCommande(){
+        float total = 0f;
 
-    public void montantCommandeReduction(){}
+        for (Emprunt c : this.getListeEmprunts()) {
+            total += c.getProduit().getTarif();
+        }
+
+        return total;
+    }
+
+    public float montantCommandeReduction(){
+        float total = montantCommande() * ((100 - this.reduction) / 100);
+        return total;
+    }
 }

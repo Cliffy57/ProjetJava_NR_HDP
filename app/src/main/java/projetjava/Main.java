@@ -1,28 +1,17 @@
 package projetjava;
 
-import java.util.Date;
 
-import projetjava.client.*;
-import projetjava.produit.*;
+import projetjava.views.gui.GUI;
+
 
 public class Main {
+    
+    public Main() {
 
-    Main() {
-        Client nicolas = new Occasionnel(0, "robert", "nicolas");
-        Videotheque videotheque = new Videotheque();
-        videotheque.ajouterClient(nicolas);
-
-        Commande commande = new Commande(0, new Date(), new Date());
-        nicolas.addCommande(commande);
-        
-        Produit produit = new CD(0, "super cd", 100);
-
-        Emprunt emprunt = new Emprunt(new Date(), new Date());
-        emprunt.addProduit(produit);
-
-        commande.addEmprunt(emprunt);
-
-        
+    }
+    
+    public static void main(String[] args) {
+		new GUI();
     }
     
 }

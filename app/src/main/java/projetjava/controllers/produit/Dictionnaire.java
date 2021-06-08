@@ -1,4 +1,4 @@
-package projetjava.produit;
+package projetjava.controllers.produit;
 
 public class Dictionnaire extends Document {
     // utiliser un enum??

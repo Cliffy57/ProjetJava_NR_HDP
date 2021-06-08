@@ -3,21 +3,21 @@ package projetjava;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.Date;
 
 import org.junit.Test;
 
-import projetjava.client.Commande;
-import projetjava.client.Emprunt;
+import projetjava.controllers.client.Commande;
+import projetjava.controllers.client.Emprunt;
 
 public class TestCommande {
     @Test 
     public void getIdentifiant() {
-        Calendar deb = Calendar.getInstance();
+        Date deb = Date.getInstance();
         deb.set(2002, 8, 25);
 
-        Calendar fin = Calendar.getInstance();
+        Date fin = Date.getInstance();
         fin.set(2002, 8, 26);
 
         Commande com = new Commande(0, deb, fin);
@@ -27,10 +27,10 @@ public class TestCommande {
 
     @Test
     public void setIdentifiant() {
-        Calendar deb = Calendar.getInstance();
+        Date deb = Date.getInstance();
         deb.set(2002, 8, 25);
 
-        Calendar fin = Calendar.getInstance();
+        Date fin = Date.getInstance();
         fin.set(2002, 8, 26);
 
         Commande com = new Commande(0, deb, fin);
@@ -42,10 +42,10 @@ public class TestCommande {
 
     @Test 
     public void getDate() {
-        Calendar deb = Calendar.getInstance();
+        Date deb = Date.getInstance();
         deb.set(2002, 8, 25);
 
-        Calendar fin = Calendar.getInstance();
+        Date fin = Date.getInstance();
         fin.set(2002, 8, 26);
         Commande com = new Commande(0, deb, fin);
         
@@ -55,10 +55,10 @@ public class TestCommande {
 
     @Test 
     public void getListeClients() {
-        Calendar deb = Calendar.getInstance();
+        Date deb = Date.getInstance();
         deb.set(2002, 8, 25);
 
-        Calendar fin = Calendar.getInstance();
+        Date fin = Date.getInstance();
         fin.set(2002, 8, 26);
         Commande com = new Commande(0, deb, fin);
 
@@ -67,10 +67,10 @@ public class TestCommande {
 
     @Test 
     public void addListeEmprunt() {
-        Calendar deb = Calendar.getInstance();
+        Date deb = Date.getInstance();
         deb.set(2002, 8, 25);
 
-        Calendar fin = Calendar.getInstance();
+        Date fin = Date.getInstance();
         fin.set(2002, 8, 26);
         Commande com = new Commande(0, deb, fin);
 

@@ -1,15 +1,17 @@
-package projetjava.client;
+package projetjava.controllers.client;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
-import projetjava.produit.Produit;
+import projetjava.controllers.produit.Produit;
+
+import java.util.Date;
 
 public class Emprunt {
-    private Calendar dateDeb;
-    private Calendar dateFin;
+    private Date dateDeb;
+    private Date dateFin;
     private ArrayList<Produit> listeProduits;
+    protected Produit produit;
 
     /**
      * Crée un objet Emprunt
@@ -17,29 +19,30 @@ public class Emprunt {
      * @param dateFin date de fin de l'emprunt
      */
 
-    public Emprunt(Calendar dateDeb, Calendar dateFin) {
+    public Emprunt(Date dateDeb, Date dateFin, Produit produit) {
         this.dateDeb = dateDeb;
         this.dateFin = dateFin;
         this.listeProduits = new ArrayList<Produit>();
+        this.produit = produit;
     }
 
     /**
      * renvoie la date de début de l'objet
      * @return la date de début
-     * @see Calendar
+     * @see Date
      */
 
-    public Calendar getDateDeb() {
+    public Date getDateDeb() {
         return dateDeb;
     }
 
     /**
      * renvoie ladate de fin de l'objet
      * @return une date
-     * @see Calendar
+     * @see Date
      */
 
-    public Calendar getDateFin() {
+    public Date getDateFin() {
         return dateFin;
     }
 
@@ -61,5 +64,9 @@ public class Emprunt {
 
     public void addProduit(Produit produit) {
         this.listeProduits.add(produit);
+    }
+
+    public Produit getProduit() {
+        return this.produit;
     }
 }

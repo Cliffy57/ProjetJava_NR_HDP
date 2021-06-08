@@ -1,4 +1,4 @@
-package projetjava.client;
+package projetjava.controllers.client;
 
 import java.util.ArrayList;
 
@@ -6,8 +6,8 @@ public abstract class Client {
 	private int identifiant;
 	private String nom;
 	private String prenom;
-	private float reduction;
-	ArrayList<Commande> listeCommande;
+	protected float reduction;
+	private ArrayList<Commande> listeCommande;
 
 	/**
 	 * crée un objet Client

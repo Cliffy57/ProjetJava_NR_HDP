@@ -29,3 +29,8 @@ application {
     mainClass = 'projetjava.Main'
 }
 
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

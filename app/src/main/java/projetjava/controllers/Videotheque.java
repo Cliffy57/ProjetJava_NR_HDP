@@ -1,23 +1,26 @@
-package projetjava;
+package projetjava.controllers;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import projetjava.client.Client;
-import projetjava.produit.Produit;
+import projetjava.controllers.client.Client;
+import projetjava.controllers.client.Commande;
+import projetjava.controllers.produit.Produit;
 
 public class Videotheque {
     protected ArrayList<Client> listeClients; 
     protected ArrayList<Produit> listeProduits; 
+    protected ArrayList<Commande> listeCommandes;
 
     /**
      * crée un objet Videotheque
      * 
      */
 
-    Videotheque () {
+    public Videotheque () {
         this.listeClients = new ArrayList<Client>();
         this.listeProduits = new ArrayList<Produit>();
+        this.listeCommandes = new ArrayList<Commande>();
     }
 
     /**
@@ -119,5 +122,13 @@ public class Videotheque {
 
     public ArrayList<Produit> getListeProduits() {
         return this.listeProduits;
+    }
+
+    public ArrayList<Commande> getListeCommande() {
+        return this.listeCommandes;
+    }
+
+    public void ajouterCommande(Commande commande) {
+        this.listeCommandes.add(commande);
     }
 }

@@ -1,4 +1,4 @@
-package projetjava.client;
+package projetjava.controllers.client;
 
 public class Fidele extends Client {
 
@@ -11,8 +11,9 @@ public class Fidele extends Client {
 
 	public Fidele(int identifiant, String nom, String prenom) {
 		super(identifiant, nom, prenom);
+        this.setReduction(20.f);
 	}
 
-	public final static int reduction = 10;
+
 	   
 }

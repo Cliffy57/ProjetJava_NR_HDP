@@ -1,5 +1,5 @@
 
-package projetjava.client;
+package projetjava.controllers.client;
 
 public class Occasionnel extends Client {
 
@@ -12,9 +12,10 @@ public class Occasionnel extends Client {
 
 	public Occasionnel(int identifiant, String nom, String prenom) {
 		super(identifiant, nom, prenom);
+        this.setReduction(10.f);
 	}
   
-	public static final int reduction = 20;
+
 	
 }
 
