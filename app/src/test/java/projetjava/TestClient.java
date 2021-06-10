@@ -4,9 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import projetjava.client.Client;
-import projetjava.client.Fidele;
-import projetjava.client.Occasionnel;
+import projetjava.controllers.client.*;
+import projetjava.controllers.produit.*;
+
+
 
 public class TestClient {
     @Test 
@@ -53,9 +54,5 @@ public class TestClient {
         assertEquals(client.getPrenom(), "bb");
     }
 
-    @Test 
-    public void getReduction() {
-        assertEquals(Fidele.reduction, 10);
-        assertEquals(Occasionnel.reduction, 20);
-    }
+    
 }

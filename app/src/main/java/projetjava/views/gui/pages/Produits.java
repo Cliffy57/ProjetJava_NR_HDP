@@ -38,11 +38,14 @@ public class Produits extends Tableau  {
             tableModel.addRow(new Object[] {p.getId(), p.getTitre(), p.getTarif(), p.getClass().getSimpleName(), false});
         }
 
+        JPanel controles = new JPanel();
         JButton add = new JButton("+");
     
         String[] choix = {"bd", "dvd", "roman", "cd"};
 
         JPanel options = new JPanel();
+        options.add(new JLabel("id"));
+        options.add(new JTextField(5));
         options.add(new JLabel("titre"));
         options.add(new JTextField(5));
         options.add(new JLabel("tarif"));
@@ -54,19 +57,36 @@ public class Produits extends Tableau  {
            
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(panel.getParent(), options, "tirte", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(panel.getParent(), options, "titre", JOptionPane.ERROR_MESSAGE);
                 
                 tableModel.addRow(new Object[] {
-                    0,
                     ((JTextField) options.getComponent(1)).getText(), 
                     ((JTextField) options.getComponent(3)).getText(), 
-                    ((JComboBox) options.getComponent(5)).getSelectedItem().toString(), 
+                    ((JTextField) options.getComponent(5)).getText(), 
+                    ((JComboBox) options.getComponent(7)).getSelectedItem().toString(), 
                     false
                 });
                 
             }
         });
-        this.add(add, BorderLayout.SOUTH);
+
+        JButton del = new JButton("x");
+
+        del.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+                tableModel.removeRow(tableau.getSelectedRow());
+
+                String a = (String) tableModel.getValueAt(tableau.getSelectedRow(), 0);
+                Integer b = Integer.valueOf(a);
+                v.supprimerClient(b);
+            }
+        });
+
+        controles.add(del);
+        controles.add(add);
+        this.add(controles, BorderLayout.SOUTH);
 
         //this.add(table);
         this.add(new JLabel(String.format("Il y a au total %s produits dans la Vidéothèque", listeProduits.size())), BorderLayout.EAST);

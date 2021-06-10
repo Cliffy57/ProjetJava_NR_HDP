@@ -24,12 +24,12 @@ public class GUI extends JFrame {
     public GUI() {
         Videotheque v = new Videotheque();
 
-        for (int i=0;i<10;i++) {
+        for (int i=0;i<3;i++) {
             BD bd = new BD(i, "aze", 10.f);
             v.ajouterProduit(bd);
         }
 
-        for (int i=0;i<5;i++) {
+        for (int i=0;i<3;i++) {
             double random = Math.random();
 
             Client cl;
@@ -40,11 +40,11 @@ public class GUI extends JFrame {
                 cl = new Fidele(i, "a", "b");
             }
            
-            for (int x=0;x<10;x++) {
+            for (int x=0;x<3;x++) {
                 Commande com = new Commande(x, Calendar.getInstance().getTime(), cl.getReduction());
                 cl.addCommande(com);
     
-                for (int j=0;j<5;j++) {
+                for (int j=0;j<3;j++) {
                     Emprunt e = new Emprunt(Calendar.getInstance().getTime(), Calendar.getInstance().getTime(), v.getListeProduits().get(0));
                     com.addEmprunt(e);   
                 }

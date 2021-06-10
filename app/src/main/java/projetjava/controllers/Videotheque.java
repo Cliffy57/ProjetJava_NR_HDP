@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import projetjava.controllers.client.Client;
 import projetjava.controllers.client.Commande;
+import projetjava.controllers.client.Emprunt;
 import projetjava.controllers.produit.Produit;
 
 public class Videotheque {
@@ -20,7 +21,7 @@ public class Videotheque {
     public Videotheque () {
         this.listeClients = new ArrayList<Client>();
         this.listeProduits = new ArrayList<Produit>();
-        this.listeCommandes = new ArrayList<Commande>();
+        //this.listeCommandes = new ArrayList<Commande>();
     }
 
     /**
@@ -130,5 +131,19 @@ public class Videotheque {
 
     public void ajouterCommande(Commande commande) {
         this.listeCommandes.add(commande);
+    }
+
+    public void supprimerClient(Integer i) {
+        for (Client c : this.getListeClients()) {
+            if (c.getIdentifiant() == i) {
+                this.listeClients.remove(c);
+            }
+        }
+    }
+
+    public void ajouterEmprunt(Emprunt e) {
+        for (Commande c : this.getListeCommande()) {
+            //c.addEmprunt(e);
+        }
     }
 }

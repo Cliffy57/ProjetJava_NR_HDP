@@ -3,9 +3,9 @@
  */
 package projetjava;
 
-import projetjava.Videotheque;
-import projetjava.client.*;
-import projetjava.produit.*;
+import projetjava.controllers.produit.*;
+import projetjava.controllers.Videotheque;
+import projetjava.controllers.client.*;
 
 import org.junit.Test;
 
